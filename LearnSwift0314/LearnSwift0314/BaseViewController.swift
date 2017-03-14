@@ -17,36 +17,6 @@ class BaseViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.white
     }
-    
-    func showPopUpVC(image:UIImage) {
-        let popUpVC = PopUpWindowViewController(frame: CGRect(x: self.view.frame.size.width / 2 - 200 / 2, y: self.view.frame.size.height / 2 - 200 / 2, width: 200, height: 200))
-        let layView = popUpVC.layView
-        layView.backgroundColor = UIColor.red
-        let imageView = UIImageView()
-        imageView.image = image
-        layView.addSubview(imageView)
-        imageView.snp.makeConstraints({ (make) in
-            make.center.equalTo(layView)
-            make.width.height.equalTo(30)
-        })
-        present(popUpVC, animated: true, completion: nil)
-    }
-    
-    //显示消息
-    func showAlert(message:String){
-        let alertController = UIAlertController(title: "",message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
-        alertController.addAction(cancelAction)
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    // 打印元素
-    func printElementFromArray<t>(a: [t]) {
-        for element in a {
-            print(element)
-        }
-    }
-    
 }
 
 
@@ -135,6 +105,59 @@ extension UIViewController {
     //返回到UINavigationVC的第一个界面
     func backRootVC() {
         let _ = self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    
+    func showPopUpVC(image:UIImage) {
+        let popUpVC = PopUpWindowViewController(frame: CGRect(x: self.view.frame.size.width / 2 - 200 / 2, y: self.view.frame.size.height / 2 - 200 / 2, width: 200, height: 200))
+        let layView = popUpVC.layView
+        layView.backgroundColor = UIColor.red
+        let imageView = UIImageView()
+        imageView.image = image
+        layView.addSubview(imageView)
+        imageView.snp.makeConstraints({ (make) in
+            make.center.equalTo(layView)
+            make.width.height.equalTo(30)
+        })
+        present(popUpVC, animated: true, completion: nil)
+    }
+    
+    //显示消息
+    func showAlert(message:String){
+        let alertController = UIAlertController(title: "",message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    // 打印元素
+    func printElementFromArray<t>(a: [t]) {
+        for element in a {
+            print(element)
+        }
+    }
+    
+    func initTableView(frame:CGRect) -> UITableView{
+        let tableView = UITableView(frame: frame)
+        tableView.backgroundColor = UIColor.white
+        tableView.separatorStyle = .none
+        tableView.tableFooterView = UIView()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        self.view.addSubview(tableView)
+        return tableView
+    }
+    
+    //初始化gradientLayer并设置相关属性
+    func createGradientLayer(frame:CGRect,colors:[CGColor],locations:[NSNumber],startPoint:CGPoint,endPoint:CGPoint) -> CAGradientLayer{
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = frame
+        //设置渐变的主颜色
+        gradientLayer.colors = colors
+        gradientLayer.locations = locations
+        //此处point位置为左上角为0，左下角为1，右上角为0，右下角为1
+        gradientLayer.startPoint = startPoint
+        gradientLayer.endPoint = endPoint
+        return gradientLayer
     }
     
 }

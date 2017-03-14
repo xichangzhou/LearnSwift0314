@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334CDB931E77F545008202B1 /* CreateButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334CDB921E77F545008202B1 /* CreateButtonViewController.swift */; };
 		335B9DB21E77EBB700C6DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9DB11E77EBB700C6DB34 /* AppDelegate.swift */; };
 		335B9DB91E77EBB700C6DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335B9DB81E77EBB700C6DB34 /* Assets.xcassets */; };
 		335B9DBC1E77EBB700C6DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B9DBA1E77EBB700C6DB34 /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		334CDB921E77F545008202B1 /* CreateButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateButtonViewController.swift; sourceTree = "<group>"; };
 		335B9DAE1E77EBB700C6DB34 /* LearnSwift0314.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift0314.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335B9DB11E77EBB700C6DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335B9DB81E77EBB700C6DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334CDB941E77F5BD008202B1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				335B9DC31E77EC2100C6DB34 /* BaseViewController.swift */,
+				335B9E091E77EE1800C6DB34 /* PopUpWindowViewController.swift */,
+				335B9E0B1E77EE5300C6DB34 /* Common.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		334CDB951E77F5CB008202B1 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				335B9DC71E77EDB600C6DB34 /* Snapkit */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		334CDB961E77F605008202B1 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				335B9DB11E77EBB700C6DB34 /* AppDelegate.swift */,
+				335B9DB81E77EBB700C6DB34 /* Assets.xcassets */,
+				335B9DBA1E77EBB700C6DB34 /* LaunchScreen.storyboard */,
+				335B9DBD1E77EBB700C6DB34 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		335B9DA51E77EBB700C6DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -123,15 +154,11 @@
 		335B9DB01E77EBB700C6DB34 /* LearnSwift0314 */ = {
 			isa = PBXGroup;
 			children = (
-				335B9DC71E77EDB600C6DB34 /* Snapkit */,
-				335B9DB11E77EBB700C6DB34 /* AppDelegate.swift */,
-				335B9DB81E77EBB700C6DB34 /* Assets.xcassets */,
-				335B9DBA1E77EBB700C6DB34 /* LaunchScreen.storyboard */,
-				335B9DBD1E77EBB700C6DB34 /* Info.plist */,
-				335B9DC31E77EC2100C6DB34 /* BaseViewController.swift */,
+				334CDB961E77F605008202B1 /* Others */,
+				334CDB951E77F5CB008202B1 /* Libs */,
+				334CDB941E77F5BD008202B1 /* Tools */,
 				335B9DC51E77ED1A00C6DB34 /* ViewController.swift */,
-				335B9E091E77EE1800C6DB34 /* PopUpWindowViewController.swift */,
-				335B9E0B1E77EE5300C6DB34 /* Common.swift */,
+				334CDB921E77F545008202B1 /* CreateButtonViewController.swift */,
 			);
 			path = LearnSwift0314;
 			sourceTree = "<group>";
@@ -266,6 +293,7 @@
 				335B9E081E77EDC900C6DB34 /* UILayoutSupport+Extensions.swift in Sources */,
 				335B9DEC1E77EDC900C6DB34 /* ConstraintConstantTarget.swift in Sources */,
 				335B9DFF1E77EDC900C6DB34 /* ConstraintPriorityTarget.swift in Sources */,
+				334CDB931E77F545008202B1 /* CreateButtonViewController.swift in Sources */,
 				335B9DF41E77EDC900C6DB34 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				335B9DEA1E77EDC900C6DB34 /* ConstraintAttributes.swift in Sources */,
 				335B9DFD1E77EDC900C6DB34 /* ConstraintMultiplierTarget.swift in Sources */,
@@ -440,6 +468,7 @@
 				335B9DC21E77EBB700C6DB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
