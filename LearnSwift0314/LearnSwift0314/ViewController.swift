@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
+        
     }
     
     func initTableView() {
