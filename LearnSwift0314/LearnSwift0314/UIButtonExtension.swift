@@ -11,13 +11,13 @@ import UIKit
 extension UIButton {
     
     //将子视图添加到父视图中
-    func jsonxczAddViewToSupView(supView:UIView,subView:UIView) -> UIButton{
+    override func jsonxczAddViewToSupView(supView:UIView,subView:UIView) -> UIButton{
         supView.addSubview(subView)
         return self
     }
     
     //将子视图添加到父视图中
-    func jsonxczAddViewToSupView(supView:UIView) -> UIButton{
+    override func jsonxczAddViewToSupView(supView:UIView) -> UIButton{
         supView.addSubview(self)
         return self
     }
@@ -126,7 +126,7 @@ extension UIButton {
     ///
     /// - Parameter frame: 按钮frame
     /// - Returns: 返回按钮
-   class func jsonxczInit(frame:CGRect) -> UIButton{
+   override class func jsonxczInit(frame:CGRect) -> UIButton{
         let btn = UIButton(frame: frame)
         btn.backgroundColor = UIColor.red
         return btn
@@ -139,7 +139,7 @@ extension UIButton {
     ///   - frame: 按钮frame
     ///   - backgroundColor: 按钮背景颜色
     /// - Returns: 返回按钮
-    class func jsonxczInit(frame:CGRect,backgroundColor:UIColor) -> UIButton{
+    override class func jsonxczInit(frame:CGRect,backgroundColor:UIColor) -> UIButton{
         let btn = jsonxczInit(frame: frame)
         btn.backgroundColor = backgroundColor
         return btn

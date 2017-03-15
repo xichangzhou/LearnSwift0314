@@ -46,8 +46,11 @@
 		335B9E061E77EDC900C6DB34 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9DE51E77EDC900C6DB34 /* LayoutConstraint.swift */; };
 		335B9E071E77EDC900C6DB34 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9DE61E77EDC900C6DB34 /* LayoutConstraintItem.swift */; };
 		335B9E081E77EDC900C6DB34 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9DE81E77EDC900C6DB34 /* UILayoutSupport+Extensions.swift */; };
-		335B9E0A1E77EE1800C6DB34 /* PopUpWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9E091E77EE1800C6DB34 /* PopUpWindowViewController.swift */; };
 		335B9E0C1E77EE5300C6DB34 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B9E0B1E77EE5300C6DB34 /* Common.swift */; };
+		338628E91E78C48C00796F72 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338628E81E78C48C00796F72 /* UILabelExtension.swift */; };
+		338628EB1E78C4B200796F72 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338628EA1E78C4B200796F72 /* UIViewExtension.swift */; };
+		338628ED1E78C89000796F72 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338628EC1E78C89000796F72 /* UIViewControllerExtension.swift */; };
+		338628EF1E78D7EB00796F72 /* JsonxczPopUpWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338628EE1E78D7EB00796F72 /* JsonxczPopUpWindowVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,8 +96,11 @@
 		335B9DE61E77EDC900C6DB34 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		335B9DE71E77EDC900C6DB34 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
 		335B9DE81E77EDC900C6DB34 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		335B9E091E77EE1800C6DB34 /* PopUpWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpWindowViewController.swift; sourceTree = "<group>"; };
 		335B9E0B1E77EE5300C6DB34 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		338628E81E78C48C00796F72 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		338628EA1E78C4B200796F72 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		338628EC1E78C89000796F72 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		338628EE1E78D7EB00796F72 /* JsonxczPopUpWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonxczPopUpWindowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				335B9DC31E77EC2100C6DB34 /* BaseViewController.swift */,
-				335B9E091E77EE1800C6DB34 /* PopUpWindowViewController.swift */,
 				335B9E0B1E77EE5300C6DB34 /* Common.swift */,
+				338628EE1E78D7EB00796F72 /* JsonxczPopUpWindowVC.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -141,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				334CDB981E77FF32008202B1 /* UIButtonExtension.swift */,
+				338628E81E78C48C00796F72 /* UILabelExtension.swift */,
+				338628EA1E78C4B200796F72 /* UIViewExtension.swift */,
+				338628EC1E78C89000796F72 /* UIViewControllerExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 				335B9DF61E77EDC900C6DB34 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				335B9DC61E77ED1A00C6DB34 /* ViewController.swift in Sources */,
 				335B9DF91E77EDC900C6DB34 /* ConstraintMakerExtendable.swift in Sources */,
+				338628EB1E78C4B200796F72 /* UIViewExtension.swift in Sources */,
 				335B9E041E77EDC900C6DB34 /* ConstraintViewDSL.swift in Sources */,
 				335B9DFB1E77EDC900C6DB34 /* ConstraintMakerPriortizable.swift in Sources */,
 				335B9E031E77EDC900C6DB34 /* ConstraintView+Extensions.swift in Sources */,
@@ -298,6 +308,7 @@
 				335B9DFC1E77EDC900C6DB34 /* ConstraintMakerRelatable.swift in Sources */,
 				335B9E001E77EDC900C6DB34 /* ConstraintRelatableTarget.swift in Sources */,
 				335B9DFA1E77EDC900C6DB34 /* ConstraintMakerFinalizable.swift in Sources */,
+				338628E91E78C48C00796F72 /* UILabelExtension.swift in Sources */,
 				335B9DEE1E77EDC900C6DB34 /* ConstraintDSL.swift in Sources */,
 				335B9E021E77EDC900C6DB34 /* ConstraintView.swift in Sources */,
 				335B9E011E77EDC900C6DB34 /* ConstraintRelation.swift in Sources */,
@@ -310,6 +321,8 @@
 				335B9DEA1E77EDC900C6DB34 /* ConstraintAttributes.swift in Sources */,
 				335B9DFD1E77EDC900C6DB34 /* ConstraintMultiplierTarget.swift in Sources */,
 				335B9DEB1E77EDC900C6DB34 /* ConstraintConfig.swift in Sources */,
+				338628EF1E78D7EB00796F72 /* JsonxczPopUpWindowVC.swift in Sources */,
+				338628ED1E78C89000796F72 /* UIViewControllerExtension.swift in Sources */,
 				335B9DF51E77EDC900C6DB34 /* ConstraintLayoutSupport.swift in Sources */,
 				335B9E051E77EDC900C6DB34 /* Debugging.swift in Sources */,
 				335B9E061E77EDC900C6DB34 /* LayoutConstraint.swift in Sources */,
@@ -317,7 +330,6 @@
 				335B9E071E77EDC900C6DB34 /* LayoutConstraintItem.swift in Sources */,
 				335B9DF71E77EDC900C6DB34 /* ConstraintMaker.swift in Sources */,
 				335B9DC41E77EC2100C6DB34 /* BaseViewController.swift in Sources */,
-				335B9E0A1E77EE1800C6DB34 /* PopUpWindowViewController.swift in Sources */,
 				335B9DF01E77EDC900C6DB34 /* ConstraintInsetTarget.swift in Sources */,
 				335B9DEF1E77EDC900C6DB34 /* ConstraintInsets.swift in Sources */,
 				335B9DF31E77EDC900C6DB34 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
